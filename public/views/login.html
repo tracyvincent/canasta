@@ -1,0 +1,34 @@
+<div class="col-sm-2 filler">
+</div>
+<div class="col-sm-8">
+  <div class="panel panel-info">
+    <div class="panel-heading">Log into your account</div>
+      <div class="panel-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="username" class="col-sm-4 control-label">Username:</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="username" ng-model="login.username">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="col-sm-4 control-label">Password:</label>
+            <div class="col-sm-6">
+              <input type="password" class="form-control" id="password" ng-model="login.password">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-10">
+              <button ng-click="login.login()" type="button" class="btn btn-primary">Login</button>
+              <a href="/register">Register</a>
+            </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div><div class="col-sm-2 filler">
+</div>

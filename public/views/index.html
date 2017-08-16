@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="canastaApp">
   <head>
     <link href="vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
     <script src="vendor/angular/angular.min.js"></script>
     <script src="vendor/angular-route/angular-route.min.js"></script>
+    <script src="assets/client.min.js"></script>
+    <base href="/" />
   </head>
 
-  <body>
+  <body ng-controller="MainController as main">
     <div class="wrapper clearfix">
       <header>
-        <h1>Canasta</h1>
+        <h1>Canasta Score Keeper</h1>
       </header>
+      <div ng-show="main.dashLink">
+        <a href="/dashboard">Game Dashboard</a>
+      </div>
+      <div ng-view>
+
+      </div>
     </div>
   </body>
 </html>
